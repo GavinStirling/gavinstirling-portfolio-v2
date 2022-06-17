@@ -8,7 +8,6 @@ import Projects from './containers/Projects/Projects';
 import About from './containers/About/About';
 import Footer from './containers/Footer/Footer';
 
-
 function App() {
   return (
     <div className="App">

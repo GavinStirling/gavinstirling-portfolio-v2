@@ -1,0 +1,19 @@
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/mixins.scss" as *;
+
+.skill {
+    font-family: $primary-font;
+    color: $secondary-font-color;
+    font-weight: 500;
+
+    @include centerCard();
+
+    img {
+        height: $skill-image-size;
+        width: $skill-image-size;
+    }
+
+    p {
+        margin-top: 2em;
+    }
+}
