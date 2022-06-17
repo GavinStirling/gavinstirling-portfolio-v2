@@ -1,0 +1,61 @@
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/mixins.scss" as *;
+
+@media screen and (max-width: 480px) {
+    .nav__contact {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .nav__contact {
+        @include centerSelf();
+        margin: 0 0;
+        height: 2.5em;
+        width: 10em;
+        font-family: $primary-font;
+        font-weight: 700;
+        color: $secondary-color;
+        background-color: $primary-color;
+        border: solid 1px $secondary-color;
+        border-radius: 0.25em;
+
+        a {
+            color: $secondary-color;
+            width: 100%;
+            margin: 0 1.5rem;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: $secondary-color;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav__contact {
+        @include centerSelf();
+        margin: 0 1em;
+        padding: 0 0.5em;
+        height: 2.5em;
+        width: 18em;
+        font-family: $primary-font;
+        font-weight: 700;
+        color: $secondary-color;
+        background-color: $primary-color;
+        border: solid 1px $secondary-color;
+        border-radius: 0.25em;
+
+        a {
+            color: $secondary-color;
+            width: 100%;
+            margin: 0 1.5rem;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: $secondary-color;
+        }
+    }
+}

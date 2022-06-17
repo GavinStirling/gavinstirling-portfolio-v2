@@ -1,0 +1,23 @@
+@mixin centerSelf() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centerCard() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin rowBetween() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin rowAround() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
