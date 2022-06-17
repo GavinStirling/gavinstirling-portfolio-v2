@@ -89,7 +89,7 @@
         }
 
         &__right {
-            @include rowAround();
+            @include rowEvenly();
             width: 60%;
         }
 
@@ -98,7 +98,7 @@
             font-family: $primary-font;
             font-weight: 400;
             color: $secondary-font-color;
-            @include rowAround();
+            @include rowEvenly();
         }
     }
 }
@@ -129,7 +129,7 @@
         }
 
         &__right {
-            @include rowAround();
+            @include rowEvenly();
             width: 60%;
         }
 
@@ -138,7 +138,7 @@
             font-family: $primary-font;
             font-weight: 400;
             color: $secondary-font-color;
-            @include rowAround();
+            @include rowEvenly();
 
             a {
                 margin: 0 1.5rem;

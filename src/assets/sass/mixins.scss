@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-@mixin rowAround() {
+@mixin rowEvenly() {
     display: flex;
     justify-content: space-around;
     align-items: center;

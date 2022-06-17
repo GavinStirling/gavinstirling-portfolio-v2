@@ -1,0 +1,190 @@
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/mixins.scss" as *;
+
+.intro {
+    margin: 5em $section-margin $section-margin;
+
+    font-family: $primary-font;
+
+    &__left {
+        @include centerCard();
+    }
+
+    &__subtitle {
+        color: $secondary-font-color;
+    }
+
+    &__title {
+        font-weight: 600;
+    }
+
+    &__emoji {
+        height: 1em;
+        width: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .intro {
+        
+        height: 95vh;
+        padding: 2em;
+
+
+        &__subtitle {
+            font-weight: 500;
+            margin-bottom: 2em;
+        }
+
+        &__image {
+            display: none;
+        }
+
+        &__emoji {
+            display: none;
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 4em;
+            margin-bottom: 0.5em;
+            text-align: left;
+        }
+
+        &__button {
+            width: 100%;
+            height: 4em;
+            margin-bottom: 2em;
+            font-family: $primary-font;
+            font-weight: 700;
+            font-size: 1.25em;
+            background-color: $primary-color;
+            border: 2px solid $secondary-color;
+            border-radius: 0.25em;
+            box-shadow: 0.25em 0.25em $secondary-color;
+            color: $secondary-color;
+            text-decoration: none;
+        }
+        a {
+            color: $secondary-color;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: $secondary-color;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .intro {
+        width: 90%;
+        height: 50vh;
+
+        &__left {
+            justify-content: center;
+        }
+
+        &__subtitle {
+            @include centerSelf();
+            height: 5vh;
+            margin: 0.5em 0;
+
+        }
+
+        &__image {
+            display: none;
+        }
+
+
+
+        &__title {
+            text-align: center;
+            font-size: 2.25em;
+            margin: 0.5em 0;
+            width: 80%;
+       
+        }
+
+        &__button {
+            font-family: $primary-font;
+            font-weight: 700;
+            font-size: 1em;
+            padding: 1em;
+            margin: 1em;
+            background-color: $primary-color;
+            border: 2px solid $secondary-color;
+            border-radius: 0.25em;
+            box-shadow: 0.1em 0.1em $secondary-color;
+
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .intro {
+        width: 85%;
+        height: 90vh;
+
+        margin: $margin-tablet;
+
+        @include rowBetween();
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+        }
+
+        &__image {
+            width: auto;
+            height: 70%;
+            margin: 1.5em 0;
+            border-radius: 2%;
+        }
+
+        &__subtitle {
+            height: 5vh;
+            margin: 0.5em 0;
+        }
+
+        &__title {
+            text-align: left;
+            font-size: 2.25em;
+            margin: 0.5em 0;
+            width: 80%;
+            font-weight: 600;
+        }
+
+        &__button {
+            width: 50%;
+            font-family: $primary-font;
+            font-weight: 700;
+            font-size: 1em;
+            padding: 1em 0;
+            margin: 1em;
+            background-color: $primary-color;
+            border: 2px solid $secondary-color;
+            border-radius: 0.25em;
+            box-shadow: 0.1em 0.1em $secondary-color;
+
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: $secondary-color;
+            }
+        }
+    }
+}
