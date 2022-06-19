@@ -2,6 +2,7 @@
 @use "../../assets/sass/mixins.scss" as *;
 
 .skills {
+    width: 90%;
     &__heading {
         height: 5vh;
         margin: 1em auto;
@@ -49,7 +50,4 @@
             justify-content: space-evenly;
         }
     }
-}
-
-@media screen and (min-width: 769px) {
 }

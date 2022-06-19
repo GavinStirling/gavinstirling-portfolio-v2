@@ -6,12 +6,12 @@ import "./Skill.scss";
 // const image = "git-logo.png";
 
 const Skill = (props) => {
-    const { name, imageURL } = props;
+    const { name, image } = props;
 
     return (
         <div className="skill">
             <div className="skill__face skill__face-front">
-                <img src={imageURL} alt={name} />
+                <img src={image} alt={name} />
             </div>
             <div className="skill__face skill__face-back">{name}</div>
         </div>
