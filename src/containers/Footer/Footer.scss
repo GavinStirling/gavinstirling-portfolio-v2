@@ -1,0 +1,72 @@
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/mixins.scss" as *;
+
+.footer {
+    width: 100%;
+    height: 25vh;
+    background-color: $secondary-color;
+    font-family: $primary-font;
+
+    @include centerCard();
+    justify-content: space-evenly;
+
+    &__links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__link {
+        font-size: 1.5em;
+        font-weight: 700;
+        width: 1em;
+        height: 1em;
+        padding: 1em;
+        margin: 0 1em;
+        background-color: $primary-color;
+        color: $secondary-color;
+        @include centerSelf();
+        border-radius: 100%;
+        text-decoration: none;
+    }
+
+    &__rights {
+        display: none;
+    }
+
+    &__email {
+        font-size: 1.125em;
+        color: $primary-background;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .footer {
+        height: 15vh;
+        padding: 0 2em 0;
+
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        &__links {
+            width: 25%;
+            justify-content: flex-end;
+        }
+
+        a {
+            margin: 0 0.5em;
+        }
+
+        &__rights {
+            display: block;
+            color: $rights-color;
+            font-weight: 600;
+            font-size: 0.75em;
+            text-align: center;
+        }
+
+        &__email {
+            font-size: 1.1em;
+        }
+    }
+}
