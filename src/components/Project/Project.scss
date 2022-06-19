@@ -3,8 +3,12 @@
 
 .project {
     height: 100%;
-    
     margin: 1.5em 0em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 
     &__image {
         width: 100%;
@@ -27,6 +31,7 @@
     &__description {
         margin: 2em 0em;
         color: $secondary-font-color;
+        text-align: left;
     }
 
     &__buttons {
