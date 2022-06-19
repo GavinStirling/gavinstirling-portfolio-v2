@@ -21,7 +21,7 @@ const Intro = () => {
                     />
                 </p>
                 <p className="intro__title">
-                    A Junior Software Develop based in the UK.
+                    A Junior Software Developer based in the UK.
                 </p>
 
                 <Button name={`Take a look at my work`} className="intro__button" target="#projects" image={buttonArrow} />

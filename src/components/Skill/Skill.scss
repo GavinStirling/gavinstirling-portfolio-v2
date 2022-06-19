@@ -2,11 +2,20 @@
 @use "../../assets/sass/mixins.scss" as *;
 
 .skill {
+    height: $skill-image-size * 1.5;
+    width: $skill-image-size * 1.5;
+
     font-family: $primary-font;
     color: $secondary-font-color;
     font-weight: 500;
 
-    @include centerCard();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transform-style: preserve-3d;
+    position: relative;
 
     img {
         height: $skill-image-size;
@@ -15,5 +24,37 @@
 
     p {
         margin-top: 2em;
+    }
+
+    &__face {
+        display: block;
+        position: absolute;
+        background-size: cover;
+        background-position: center center;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    &__face-front {
+        position: absolute;
+    }
+
+    &__face-back {
+        top: 50;
+        background: 2c3e50;
+        transform: rotateX(180deg);
+        transform: rotateY(90deg);
+    }
+}
+
+.skill:hover {
+    .skill {
+        &__face-front {
+            transform: rotateX(-180deg);
+            transform: rotatey(90deg);
+        }
+
+        &__face-back {
+            transform: rotateX(0deg);
+        }
     }
 }
