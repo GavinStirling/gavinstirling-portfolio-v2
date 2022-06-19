@@ -1,0 +1,112 @@
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/mixins.scss" as *;
+
+.about {
+    margin: 1em 1em;
+
+    @include centerCard();
+
+    font-family: $primary-font;
+
+    &__title {
+        @include centerSelf();
+        height: 5vh;
+        font-size: 3em;
+        margin: 1em auto;
+    }
+
+    &__title--desktop {
+        display: none;
+    }
+
+    &__flag {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        width: 70%;
+
+        &__image {
+            width: 90%;
+            height: auto;
+            margin: 1.5em 0;
+        }
+
+        &__story {
+            margin: 1em;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .about {
+        &__image {
+            width: 80%;
+            height: auto;
+            margin: 1.5em 0;
+        }
+
+        &__left {
+            @include centerSelf();
+            width: 100%;
+        }
+
+        &__story {
+            width: 80%;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .about {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 70%;
+            margin: 2em;
+        }
+
+        &__title {
+            display: none;
+        }
+
+        &__title--desktop {
+            display: block;
+
+            text-align: center;
+            width: 70%;
+            font-size: 2em;
+            margin: 1em 0em;
+        }
+
+        &__story {
+            text-align: left;
+        }
+
+        &__image {
+            display: none;
+        }
+
+        &__flag {
+            display: block;
+            width: 40%;
+            height: auto;
+        }
+
+        &__story {
+            width: 100%;
+            margin: 0em;
+        }
+    }
+}
