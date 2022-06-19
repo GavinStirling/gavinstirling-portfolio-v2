@@ -6,20 +6,12 @@ import skillsArray from "../../assets/data/skills";
 
 import Skill from "../../components/Skill/Skill";
 
-
-
 const Skills = () => {
     const skillsJSX = skillsArray.map((skill, index) => {
-        const image = skill.imageURL;
-        console.log(image);
+        // const image = skill.imageURL;
+        // console.log(image);
         return (
-            <>
-                <Skill
-                    key={index+1}
-                    name={skill.name}
-                    image={skill.imageURL}
-                />
-            </>
+            <Skill key={index + 1} name={skill.name} image={skill.imageURL} />
         );
     });
 

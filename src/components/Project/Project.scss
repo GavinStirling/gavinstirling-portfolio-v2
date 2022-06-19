@@ -1,0 +1,61 @@
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/mixins.scss" as *;
+
+.project {
+    height: 100%;
+    
+    margin: 1.5em 0em;
+
+    &__image {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    &__tech {
+        margin-bottom: 0.5em;
+        color: $primary-color;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.95em;
+    }
+
+    &__title {
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    &__description {
+        margin: 2em 0em;
+        color: $secondary-font-color;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 2.5em;
+
+        a {
+            font-family: $primary-font;
+            font-weight: 600;
+            width: 8em;
+            @include centerSelf();
+            margin-right: 1em;
+            background-color: $primary-background;
+            border: none;
+            display: flex;
+            justify-content: flex-start;
+
+            text-decoration: none;
+            color: $secondary-color;
+
+            img {
+                margin-left: 1em;
+            }
+        }
+
+        a:visited {
+            color: $secondary-color;
+        }
+    }
+}

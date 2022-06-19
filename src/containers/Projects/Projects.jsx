@@ -7,8 +7,18 @@ import Project from "../../components/Project/Project";
 import projectsArray from "../../assets/data/projects";
 
 const Projects = () => {
-    const ProjectJSX = projectsArray.map((project) => {
-        return <Project />;
+    const ProjectJSX = projectsArray.map((project, index) => {
+        return (
+            <Project
+            key={index+1}
+                name={project.name}
+                tech={project.tech}
+                image={project.image}
+                description={project.description}
+                githubLink={project.githubLink}
+                deployedLink={project.deployedLink}
+            />
+        );
     });
 
     return (
@@ -21,7 +31,7 @@ const Projects = () => {
                     live website.
                 </p>
             </div>
-            <div className="project__tiles">{ProjectJSX}</div>
+            <div className="projects__tiles">{ProjectJSX}</div>
         </div>
     );
 };
