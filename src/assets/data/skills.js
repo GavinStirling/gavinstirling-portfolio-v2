@@ -1,5 +1,5 @@
 const skillsArray = [
-    { name: "Git", imageURL: "../../assets/images/skill-logos/git-logo.png" },
+    { name: "Git", imageURL: "../../../src/assets/images/skill-logos/git-logo.png" },
     {
         name: "HTML5",
         imageURL: "../../assets/images/skill-logos/html5-logo.png",

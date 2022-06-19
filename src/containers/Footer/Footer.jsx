@@ -6,7 +6,7 @@ import githubLogo from "../../assets/images/footer/github-logo.png";
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer id="footer" className="footer">
             <div className="footer__links">
                 <a
                     className="footer__link"

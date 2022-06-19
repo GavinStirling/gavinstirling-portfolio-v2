@@ -2,7 +2,7 @@
 @use "../../assets/sass/mixins.scss" as *;
 
 .intro {
-    margin: 5em $section-margin $section-margin;
+    margin: 2.5em $section-margin $section-margin;
 
     font-family: $primary-font;
 
@@ -54,7 +54,7 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .intro {
         width: 90%;
-        height: 50vh;
+        height: 35vh;
 
         &__left {
             justify-content: center;
@@ -82,7 +82,7 @@
 @media screen and (min-width: 769px) {
     .intro {
         width: 85%;
-        height: 90vh;
+        height: 50vh;
 
         margin: $margin-tablet;
 
@@ -97,7 +97,7 @@
 
         &__image {
             width: auto;
-            height: 70%;
+            height: 90%;
             margin: 1.5em 0;
             border-radius: 2%;
         }

@@ -15,7 +15,7 @@ const Project = (props) => {
                 {tech}
             </p>
             <p className="project__title">
-                Connect Four Game
+                {name}
             </p>
             <p className="project__description">
                {description}
