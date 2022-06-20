@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/gavinstirling-portfolio-v2/static/css/main.7cd68a1f.css",
+    "main.js": "/gavinstirling-portfolio-v2/static/js/main.19c24f9f.js",
+    "static/js/787.ecfcbd6d.chunk.js": "/gavinstirling-portfolio-v2/static/js/787.ecfcbd6d.chunk.js",
+    "static/media/STIRLING-80.jpg": "/gavinstirling-portfolio-v2/static/media/STIRLING-80.784f44af1e7895fd88f3.jpg",
+    "static/media/sa-flag.jpg": "/gavinstirling-portfolio-v2/static/media/sa-flag.3fa33c088e239c2b42c1.jpg",
+    "index.html": "/gavinstirling-portfolio-v2/index.html",
+    "main.7cd68a1f.css.map": "/gavinstirling-portfolio-v2/static/css/main.7cd68a1f.css.map",
+    "main.19c24f9f.js.map": "/gavinstirling-portfolio-v2/static/js/main.19c24f9f.js.map",
+    "787.ecfcbd6d.chunk.js.map": "/gavinstirling-portfolio-v2/static/js/787.ecfcbd6d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cd68a1f.css",
+    "static/js/main.19c24f9f.js"
+  ]
+}
