@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Skills.scss";
 
-import skillsArray from "../../assets/data/skills";
+import skillsArray from "../../data/skills";
 
 import Skill from "../../components/Skill/Skill";
 

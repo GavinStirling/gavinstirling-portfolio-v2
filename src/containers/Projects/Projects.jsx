@@ -4,7 +4,7 @@ import "./Projects.scss";
 
 import Project from "../../components/Project/Project";
 
-import projectsArray from "../../assets/data/projects";
+import projectsArray from "../../data/projects";
 
 const Projects = () => {
     const ProjectJSX = projectsArray.map((project, index) => {
