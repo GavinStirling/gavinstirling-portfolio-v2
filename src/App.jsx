@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import './App.scss';
 import './assets/sass/reset.scss'
 
@@ -9,6 +11,8 @@ import About from './containers/About/About';
 import Footer from './containers/Footer/Footer';
 
 function App() {
+  const [switchProjectsPage, setSwitchProjectsPage] = useState(false);
+
   return (
     <div className="App">
 
