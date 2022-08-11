@@ -44,6 +44,14 @@ const projectsArray = [
         githubLink: "https://github.com/GavinStirling/beers-app",
         deployedLink: "https://gavinstirling.github.io/beers-app/",
     },
+    {
+        name: "Zoop",
+        tech: "Java",
+        image: "",
+        description: " Java command line project which manages a user and a zoo of animals. Currently lions and magpies. It makes use of Object Orieted Programming concepts, being abstraction, encapsulation, inheritance and polymorphism.  ",
+        githubLink: "https://github.com/GavinStirling/zoop",
+        deployedLink: "https://github.com/GavinStirling/zoop"
+    }
 ];
 
 export default projectsArray;
