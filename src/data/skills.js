@@ -22,7 +22,7 @@ const skillsArray = [
     },
     {
         name: "C#",
-        imageURL: ""
+        imageURL: "https://raw.githubusercontent.com/GavinStirling/gavinstirling-portfolio-v2/main/src/assets/images/skill-logos/csharp-logo.png"
     }
 ];
 
