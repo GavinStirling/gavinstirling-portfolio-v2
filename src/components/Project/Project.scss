@@ -8,16 +8,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     &__image {
         height: 15em;
-        
-        margin-bottom: 1em;
     }
 
     &__tech {
-        margin-bottom: 0.5em;
         color: $primary-color;
         text-transform: uppercase;
         font-weight: 600;
