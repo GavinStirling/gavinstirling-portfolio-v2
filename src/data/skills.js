@@ -20,6 +20,10 @@ const skillsArray = [
         name: "Spring Boot",
         imageURL: "https://raw.githubusercontent.com/GavinStirling/gavinstirling-portfolio-v2/main/src/assets/images/skill-logos/springboot-logo.png",
     },
+    {
+        name: "C#",
+        imageURL: ""
+    }
 ];
 
 
