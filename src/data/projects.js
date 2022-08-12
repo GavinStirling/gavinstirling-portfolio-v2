@@ -51,6 +51,14 @@ const projectsArray = [
         description: " Java command line project which manages a user and a zoo of animals. Currently lions and magpies. It makes use of Object Orieted Programming concepts, being abstraction, encapsulation, inheritance and polymorphism.  ",
         githubLink: "https://github.com/GavinStirling/zoop",
         deployedLink: "https://github.com/GavinStirling/zoop"
+    },
+    {
+        name: "Card Game",
+        tech: "Java",
+        image: "https://raw.githubusercontent.com/GavinStirling/gavinstirling-portfolio-v2/main/src/assets/images/projects/cardgame-preview.png",
+        description: " Java command line project which simulates a card game. The first game interacts with a deck of cards, the second game is a one player version of snap and the third is a two player version of snap. ",
+        githubLink: "https://github.com/GavinStirling/card-game",
+        deployedLink: "https://github.com/GavinStirling/card-game"
     }
 ];
 
